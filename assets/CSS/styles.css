@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&display=swap");
+:root{
+    --font1: "Baloo Bhaina 2", cursive;
+    --font2: "Roboto", sans-serif;
+}
+.font-1{
+    font-family: var(--font1);
+}
+.font-2{
+    font-family: var(--font2);
+}
+* {
+    margin: 0;
+    padding: 0;
+  }
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    margin: 10px auto;
+}
+.left-nav{
+ display: flex;
+ align-items: center;
+ gap: 2.5vw;
+}
+.left-nav ul{
+    display: flex;
+    gap: 3vw;
+}
+.left-nav ul li{
+    list-style: none;
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: black;
+    /* transition: all 0.3s ease-in-out; */
+}
+.left-nav ul li a:hover{
+    text-decoration: none;
+    color: brown;
+    font-weight: bold;
+}
+.right-nav input{
+    padding: 4px;
+    border-radius: 4px;
+    text-align: center;
+}
+.btn{
+    padding: 4px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid black;
+    transition: all 0.4s ease-in-out;
+}
+.btn:hover{
+    background: brown;
+    color: white;
+}
+hr{
+    width: 80vw;
+    margin: auto;
+}
+.first-section{
+    width: 80vw;
+    height: 395px;
+    margin: 32px auto;
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    position: relative;
+}
+.first-section::after{
+        content: "";
+        background-image: url(../images/11.svg);
+        position: absolute;
+        width: 100%;
+        height: inherit;
+        opacity: 0.15;
+        border-radius: 12px;
+}
+.intro-left{
+    display: flex;
+    flex-direction: column;
+    padding: 14px;
+}
+.image-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.image-right img{
+    height: 344px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.second-section{
+    width: 80vw;
+    margin: auto;
+    position: relative;
+    padding: 18px;
+    background-color: rgb(248, 239, 239, 0.5);
+}
+.second-section .filter-year{
+    position: absolute;
+    right: 0px;
+    top: 100px;
+    width: 234px;
+    height: 255px;
+    font-size: 18px;
+}
+article{
+    display: flex;
+    padding: 8px 20px;
+}
+article .article-image img{
+    width: 300px;
+}
+article .article-content{
+    align-self: center;
+    padding: 25px;
+}
+.article-content a{
+    text-decoration: none;
+    color: black;
+}
