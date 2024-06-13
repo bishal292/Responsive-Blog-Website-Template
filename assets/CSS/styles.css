@@ -14,7 +14,10 @@
   margin: 0;
   padding: 0;
 }
-
+::selection{
+  background-color: black;
+  color: orange;
+}
 /* ************************************************** */
 /*        INDEX HTML   */
 
@@ -196,4 +199,71 @@ textarea {
     width: 35vw;
     height: 6vh;
   border-color: rgb(235, 210, 163);
+}
+
+
+
+
+/* **************************************** */
+/*      BLOGPOST HTML        */
+.blogpost{
+  width: 80vw;
+  margin: 2px auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(248, 239, 239, 0.5);
+}
+.blogpost .post-image{
+  height: 400px;
+  overflow: hidden;
+}
+.blogpost .post-image img{
+  width: 100%;
+}
+.blog-container{
+  width: 60vw;
+  margin: 5px auto;
+  font-family: var(--font1);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.blog-container .title{
+  text-align: center;
+}
+.blog-header{
+  font-family: var(--font2);
+  line-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.share-icons a{
+  margin: 0px 3px;
+  width: 24px;
+  height: 24px;
+}
+.share-icons a svg:hover{
+  color: orange;
+  background-color: black;
+  scale: 1.1;
+}
+#rec-title{
+  margin-top: 13px;
+}
+.recommendations{
+  display: flex;
+  width: 60vw;
+  overflow-x: scroll;
+}
+.recommended-articles{
+  display: flex;
+  flex-direction: column;
+  padding: 20px 12px;
+  margin-right: 12px;
+}
+.recommendations article .recArt-content{
+  padding: 0px;
 }
