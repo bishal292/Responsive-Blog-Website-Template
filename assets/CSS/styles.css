@@ -201,6 +201,27 @@ textarea {
   border-color: rgb(235, 210, 163);
 }
 
+.demo-notice {
+  max-width: 640px;
+  margin: 12px auto;
+  line-height: 1.6;
+  text-align: center;
+}
+.preview-field {
+  width: 40vw;
+  min-height: 38px;
+  margin: 10px 0;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 2px solid orange;
+  border-radius: 4px;
+  color: #707070;
+  background: white;
+}
+.form-container .Submit:disabled {
+  cursor: not-allowed;
+  opacity: 0.7;
+}
 
 
 
